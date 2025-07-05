@@ -1,182 +1,240 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ji-Ping Wang's Webpage</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Ji‑Ping Wang | Professor of Statistics & Data Science</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="jipingw_photo.jpg" alt="Professor Ji‑Ping Wang" class="profile-photo" >
+    <div>
+      <h1>Ji‑Ping Wang</h1>
+      <p>Professor of Statistics &amp; Data Science, Adjunct Professor of Molecular BioSciences</p>
+      <p>Faculty at NSF‑Simons National Institute for Theory &amp; Mathematics in Biology, Northwestern University</p>
+      <ul>
+            <li><a href="https://scholar.google.com/citations?hl=en&user=pijDrQMAAAAJ&view_op=list_works">Google Scholar</a></li>
+            <li><a href="http://github.com/jipingw">My Github page</a></li>
+           <li><a href="publication.html",target="_self">Publications</a></li>
+            </ul>
+    </div>
+  </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <nav>
+    <ul>
+      <li><a href="#news">News</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#publications">Selected Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+  <section id="news">
+    <h2>News & Announcements</h2>
+    <ul>
+      <li><strong>DNAcycP2</strong> (2025): Deep learning tool for DNA cyclizability with data augmentation. 2025, NAR, <a href="https://github.com/jipingw/DNAcycP2" target="_top"> R package  </a>, <a href="https://github.com/oazarate/DNAcycP2-Python" target="_top"> Python package </a></li>
+    </ul>
+  </section>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><h2>Ji-Ping Wang</h2> </a>
-									<ul class="icons">
-													</ul>
-								</header>
-                       
-							<!-- Banner -->
-								<section id="banner">
-                                    
-									<div class="content">
-								
-                                        
-										<p>
-                                            <span class="image right"><img src="images/Jiping_big_head.jpg" alt="" /></span>
-                                            I am a Professor of <a href="https://statistics.northwestern.edu/">Statistics and Data Science</a>, an adjunct Professor of <a href="https://molbiosci.northwestern.edu/">Molecular BioSciences</a> and a faculty member of the <a href="https://www.nitmb.org/"> National Institute for Theory and Mathematics in Biology (NITMB)  </a> at Northwestern University. I received my PhD in Statistics from Pennsylvania State University in 2003 and BS from University of Science and Technology of China in 1995.
-                                        </p>
-                                        
-                                        <p><b style="font-size:15px;">My research interest</b>: Bioinformatics and computational biology; 
-                                                Nucleosome mapping and positioning prediction; Epigenetics;
-                                                Species number and populuation size estimation;
-                                                    Mixture models and computing algorithms</p>
-                                        
-                                        <p>In my spare time, I like fishing, playing pickleball, table tennis and hiking. </p>
-										<ul class="actions">
-											<li><a href="https://statistics.northwestern.edu/people/faculty/ji-ping-wang.html" class="button big">Learn More</a></li>
-										</ul>
-                                    </div>
-								</section>
-                            
-                            <header class="major">
-										<h2>News</h2>
-									</header>
-                            <div class="box">
-                             <li><strong>DNAcycP2</Strong>: an improved deep learning tool for DNA cyclizability prediction, 2025, NAR, <a href="https://github.com/jipingw/DNAcycP2" target="_top"> R package  </a>, <a href="https://github.com/oazarate/DNAcycP2-Python" target="_top"> Python package </a></li> 
-                
-                            </div>
+  <section id="tools">
+    <h2>Some Bioinformatic Tools We Developed</h2>
 
-                           		<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Some Bioinformatic Tools We Developped</h2>
-									</header>
-									<div class="posts">
-                                         <article>
-                                            <h2>DNAcycP2 <sup style="color:red;font-size:20px;">new</sup> </h2>
-											<a href="#" class="image"><img src="./images/bend2.jpg" alt="" /></a>
-                                            <h3><p>DNAcycP2 is an improved version of previously released DNAcycP for DNA cyclizability or bendability prediction trained based on loop-seq data after removing biotin bias using a newly developed data augmentation approach.</p></h3> DNA mechanical properties play a critical role in every aspect of DNA-dependent biological processes. Recently a high throughput assay named loop-seq has been developed to quantify the intrinsic bendability of a massive number of DNA fragments simultaneously. DNAcycP2, built on a deep-learning approach, predicts intrinsic DNA cyclizability with high fidelity compared to the experimental data. 
-											<ul class="actions">
-												<li><a href="https://github.com/jipingw/DNAcycP2" class="button">Github</a></li>
-                                                <li><a href="https://bioconductor.org/" class="button">Bioconductor</a></li>
-                                                <li><a href="https://cyclizability.stats.northwestern.edu/" class="button">Web server</a></li>
-                                                
-											</ul>
-										</article>
-                                           <article>
-                                            <h2>BoostMEC <sup style="color:red;">new</sup></h2>
-                                            <a href="#" class="image"><img src="./images/crispr.jpg" alt="" /></a>
-                                            <h3><p>BoostMEC is a boosting tree based approach, utilizing LightGBM for the prediction of wild-type CRISPR-Cas9 editing efficiency.</p></h3><p>CRISPR-Cas9 is the cutting-edge genome editting techonology. A variety of sgRNA properties have been found to be predictive of CRISPR cleavage efficiency, including the position-specific sequence composition of sgRNAs, global sgRNA sequence properties, and thermodynamic features. BoostMEC maintains an advantage over other state-of-the-art CRISPR efficiency prediction models that are based on deep learning through its ability to produce more interpretable feature insights and predictions.</p>
-											<ul class="actions">
-												<li><a href="https://github.com/oazarate/BoostMEC" class="button">Github</a></li>
-											</ul>
-										</article>
-                                            <article>
-											<h2>NuPoP <sup style="color:red;">update</sup></h2>
-                                            <a href="./images/nucleosome3.jpg" class="image"><img src="./images/nucleosome3.jpg" alt="" /></a>
-                                                <h3><p>NuPoP is an R package for Nucleosome Positioning Prediction based on DNA sequence. The model is trained based on in vivo chemical map or Mnase map of nucelosomes. </p></h3> Nucleosome is the foundamental packing unit of DNA in eukaryotic cells.
-                                            Its positioing is largely determined by intrinsic code in the DNA sequence. Nucleosome positioning regulates varous of cell activities such as transcription by controlling accessibity of protein factor binding. See <span style="color:red;font-size:15px;">update</span> at the github site below.
-											<ul class="actions">
-												<li><a href="https://bioconductor.org/packages/release/bioc/html/NuPoP.html" class="button">Bioconductor </a></li>
-                                                <li><a href="https://github.com/jipingw/NuPoP" class="button">Github</a></li>
-                                                </ul>
-                                              <ul class="actions">  
-                                                <li><a href="https://github.com/jipingw/NuPoP_doc" class="button">NuPoP doc</a></li>
-                                                <li><a href="https://github.com/jipingw/NuPoP_Fortran" class="button">NuPoP_Fortran</a></li>
-											</ul>
-										</article>
-                                         
-										<article>
-                                            <h2>SPECIES</h2>
-											<a href="./images/butterfly.jpg" class="image"><img src="https://images.pexels.com/photos/1190128/pexels-photo-1190128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" /></a>
-											<p><h3>SPECIES is an R package that implements various popular methods in species richness estimation.</h3> How many butterfly species are there in a ecosystem? What was the vocabulary size of Shakespere? How many microbial species are there in human's gut system? All of these questions are related to a problem known as species number estimation problem.
-											<ul class="actions">
-												<li><a href="https://cran.r-project.org/web/packages/SPECIES/index.html" class="button">CRAN</a></li>
-                                                <li><a href="https://github.com/jipingw/SPECIES" class="button">Github</a></li>            
-											</ul>
-										</article>	
-                                        
-                                        
-                                        <article>
-                                            <h2>RiboDiPA</h2>
-											<a href="./images/ribo.jpg" class="image"><img src="./images/ribo.jpg" alt="" /></a>
-                                            <h3><p>RiboDiPA is a bioinformatics pipeline developed for differential pattern analysis of Ribo-seq footprint data.</p></h3> Ribosome is a protein complex that binds to mRNA sequence to facilitate translation. Its footprint, collected by ribo-seq assay, provides a snapshot of translation activities in cells in vivo. 
-											<ul class="actions">
-	                                           <li><a href="https://www.bioconductor.org/packages/release/bioc/html/RiboDiPA.html" class="button">Bioconductor</a></li>
-                                                <li><a href="https://github.com/jipingw/RiboDiPA" class="button">Github</a></li>
-																				</ul>
-										</article>
-									
-								       <article>
-                                            <h2>DegNorm</h2>
-											<a href="./images/degnorm.jpg" class="image"><img src="./images/degnorm.jpg" alt="" /></a>
-                                           <h3><p>DegNorm is a bioinformatics pipeline to correct for bias due to the heterogeneous patterns of transcript degradation in RNA-seq data.</p></h3> RNA degradation is a commonly used measure for sample quality in RNA-seq, which is sample and gene-specific. DegNorm provides a sample- and gene-specific correction of bias due to degradation. 
-											<ul class="actions">
-												<li><a href="https://www.bioconductor.org/packages/release/bioc/html/DegNorm.html" class="button">Bioconductor</a></li>
-                                                <li><a href="https://github.com/jipingw/DegNorm" class="button">Github</a></li>
-											</ul>
-										</article>
-                                        						
-									</div>
-								</section>
+    <article class="tool">
+      <h3>DNAcycP2</h3>
+      <img src="bend2.jpg" alt="DNAcycP2 illustration" class="tool-img"/>
+      <p>
+       DNAcycP2 is an improved version of previously released DNAcycP for DNA cyclizability or bendability prediction trained based on loop-seq data after removing biotin bias using a newly developed data augmentation approach.
+      </p>
+      <ul>
+        <li><a href="https://github.com/jipingw/DNAcycP2">GitHub</a></li>
+        <li><a href="https://bioconductor.org/packages/DNAcycP2">Bioconductor</a></li>
+        <li><a href="https://dnacycp.stats.northwestern.edu">Web server</a></li>
+      </ul>
+    </article>
 
-						</div>
-					</div>
+    <article class="tool">
+      <h3>BoostMEC</h3>
+      <img src="crispr.jpg" alt="BoostMEC visualization" class="tool-img"/>
+      <p>
+      BoostMEC is a boosting tree based approach, utilizing LightGBM for the prediction of wild-type CRISPR-Cas9 editing efficiency.
+      </p>
+      <ul><li><a href="https://github.com/jipingw/BoostMEC">GitHub</a></li></ul>
+    </article>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+    <article class="tool">
+     <h3>NuPoP</h3>
+      <img src="nucleosome3.jpg" alt="NuPoP output example" class="tool-img"/>
+      <p>
+      NuPoP is an R package for Nucleosome Positioning Prediction based on DNA sequence. The model is trained based on in vivo chemical map or Mnase map of nucelosomes. 
+      </p>
+      <ul>
+        <li><a href="https://bioconductor.org/packages/NuPoP">Bioconductor</a></li>
+        <li><a href="https://github.com/jipingw/NuPoP">GitHub</a></li>
+      </ul>
+    </article>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="publication.html",target="_self">Publications</a></li>
-										<li><a href="https://scholar.google.com/citations?hl=en&user=pijDrQMAAAAJ&view_op=list_works">Google Scholar</a></li>
-                                        <li><a href="http://github.com/jipingw">My Github page</a></li>			
-										
-									</ul>
-                                    </nav>
-                               <!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Contact</h2>
-									</header>
-									<p>Address: Room 302, 2006 Sheridan Road, Evanston, IL 60208</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">jzwang@northwestern.edu</a></li>
-										<li class="icon solid fa-phone">(847) 467-6896</li>
-									
-									</ul>
-								</section>
+    <article class="tool">
+      <h3>SPECIES</h3>
+      <img src="butterfly.jpg" alt="SPECIES illustration" class="tool-img"/>
+      <p>
+      SPECIES is an R package that implements various popular methods in species richness estimation.      </p>
+      <ul>
+        <li><a href="https://cran.r-project.org/package=SPECIES">CRAN</a></li>
+        <li><a href="https://github.com/jipingw/SPECIES">GitHub</a></li>
+      </ul>
+    </article>
+
+    <article class="tool">
+      <h3>RiboDiPA</h3>
+      <img src="ribo.jpg" alt="RiboDiPA diagram" class="tool-img"/>
+      <p>
+      RiboDiPA is a bioinformatics pipeline developed for differential pattern analysis of Ribo-seq footprint data.      </p>
+      <ul>
+        <li><a href="https://github.com/jipingw/RiboDiPA">GitHub</a></li>
+        <li><a href="https://bioconductor.org/packages/RiboDiPA">Bioconductor</a></li>
+      </ul>
+    </article>
+
+    <article class="tool">
+      <h3>DegNorm</h3>
+      <img src="degnorm.jpg" alt="DegNorm plot" class="tool-img"/>
+      <p>
+       DegNorm is a bioinformatics pipeline to correct for bias due to the heterogeneous patterns of transcript degradation in RNA-seq data.      </p>
+      <ul>
+        <li><a href="https://github.com/jipingw/DegNorm">GitHub</a></li>
+        <li><a href="https://bioconductor.org/packages/DegNorm">Bioconductor</a></li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+  <ul>
+
+                    	<li >
+                                        <p>DNAcycP2: improved estimation of intrinsic DNA cyclizability through data augmentation <br>
+                                        Kendall, B., Jin, C., Li, K., Ruan, F., Wang, X.A., and  <strong> Wang, J.-P.</strong>, <em><strong> Nucleic Acids Research </strong></em>,
+                                        2025, 53, gkaf145, download <a href="https://github.com/jipingw/DNAcycP2-Python" target="_top"> Python package  </a>, <a href="https://bioconductor.org/packages/release/bioc/html/DNAcycP2.html" target="_top"> R package </a></p>
+                                        </li>
+
+					<li >
+                                        <p>BNLSDeconv: an efficient cell-type deconvolution method for spatial transcriptomics data<br>
+                                        Chen, Y., Ruan, F. and  <strong> Wang, J.-P.</strong>, <em><strong> Bioinformatics</strong></em>,
+                                        2025,41(1).https://doi.org/10.1093/bioinformatics/btae747<br> </p>
+                                        </li>
+   
+
+                                        <li >
+                                        <p>BoostMEC: predicting CRISPR-Cas9 cleavage efficiency through boosting models <br>
+                                        Zarate, O.A., Yang, Y., Wang, X. <strong> Wang, J.-P.</strong> <em><strong> BMC Bioinformatics</strong></em>,
+                                        23, 446 (2022). https://doi.org/10.1186/s12859-022-04998-z<br>
+                                        Python package <a href="https://github.com/oazarate/BoostMEC" target="_top"> download </a></p>
+                                        </li>
+
+                                        <li >
+                                        <p>DNAcycP: a deep learning tool for DNA cyclizability prediction <br>
+                                        Li, K., Caroll,M.,Vafabakhsh, R., Wang, X., <strong> Wang, J.-P.</strong> <em><strong> Nucleic Acids Research</strong></em>, 2022, https://doi.org/10.1093/nar/gkac162<br> Python package download: <a href="https://github.com/jipingw/DNAcycP" target="_top">GitHub,</a> Run DNA bendabilty/cyclizabilty prediction in real time <a href="https://cyclizability.stats.northwestern.edu/" target="_top"> web server,</a></p>
+                                        </li>
+ 
+
+                                        <li >
+                                        <p>RiboDiPA: A novel  tool for differential pattern analysis in Ribo-seq data <br>
+                                        Li, K., Hope, M., Wang, X., <strong> Wang, J.-P.</strong> <em><strong> Nucleic Acids Research</strong></em>, 2020,48(21), doi:10.1093/nar/gkaa1049<br>
+                                        </li>
 
 
-						</div>
-					</div>
+                                        <li >
+                                        <p>DegNorm: normalization of generalized transcript degradation improves accuracy in RNA-seq analysis<br>
+                                        Xiong, B., Yang, Y., Fineis, F.<strong> Wang, J.-P.</strong>,
+                                        <em><strong> Genome Biology</strong></em>, 2019, 20:75.<br>
+                                            DegNorm python package at  <span ><a href="https://nustatbioinfo.github.io/DegNorm/"><strong> <em>Github</em></strong> </a></span>
+                                        </li>
 
-			</div>
+                                        <li >
+                                        <p> Genome-wide mapping of the nucleosome landscape by micrococcal nuclease and chemical mapping <br>
+                                        Voong,L. N., Xi, L.,  <strong> Wang, J.-P.</strong>, Wang, X.
+                                        <em><strong>. Trends in Genetics</strong></em>, 2017,33(8),495-507  DOI: http://dx.doi.org/10.1016/.tig.2017.05.007.
+                                        </li>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                                        <li >
+                                        <p> Insights into Nucleosome Organization in Mouse Embryonic Stem Cells through Chemical Mapping <br>
+                                        Voong,L. N., Xi, L., Sebeson, A.C., Xiong, B., <strong> Wang, J.-P.</strong>, Wang, X.
+                                        <em><strong>. Cell</strong></em>, 2016, 167(6),1555-1570.e15, DOI: http://dx.doi.org/10.1016/j.cell.2016.10.049.
+                                            highlighted in <span ><a href="http://www.nature.com/nrm/journal/v18/n1/full/nrm.2016.167.html"><em><strong> Nature Reviews Molecular Cell Biology</strong></em> </a></span> <br>
+                                        </li>
 
-	</body>
+
+                                        <li >
+                                            <p>A locally convoluted cluster model for nucleosome positioning signals in chemical map<br>
+                                        Xi, L., Brogaard,K., Zhang, Q., Lindsay, B.G., Widom, and <strong>Wang, J.-P.</strong>, <em><strong>Journal of American Statistical Association </strong></em>, 
+                                        2014, 109(505) 48-62, DOI:10.1080/01621459.2013.862169
+                                        </li>
+
+                                        <li >
+                                            <p>Chemical map of Schizosaccharomyces pombe reveals species-specific features in nucleosome positioning<br>
+                                        Moyle-Heyrman, G., Zaichuk, T., Xi, L., Zhang, Q., Uhlenbeck, O.C., Holmgren, R., Widom, J. and <strong>Wang, J.-P.</strong>,
+                                        <em><strong>PNAS</strong></em> 2013,110(50),20158-20163<a href="http://www.pnas.org/content/110/50/20158.full.pdf+html"> pdf</a>; <a href="SpombeCmap.html"> Supplementary materials </a>
+                                          </li>
+
+                                            
+                                          <li >A Map of Nucleosome Positions in Yeast at base-pair resolution<br>
+                                            Brogaard, K., Xi, L., <strong>Wang, J.-P.</strong>, and Widom, J., <strong><em>Nature</em></strong>, 2012, 486: 496&ndash;501.<br>
+                                            <a href="http://www.nature.com/nature/journal/vaop/ncurrent/full/nature11142.html">Online Supplementary Methods</a>; <a href="NuCmap.html" target="_self">Other supplementary materials</a><br>
+                                            <p></p>
+                                          </li>
+                                            
+
+                                          <li >SPECIES: An R package for Species Richness Estimation <br>
+                                              <strong>Wang, J.P.</strong>,<strong><em> Journal of Statistical Software</em></strong>, 2011, 40(9),1-15 <a href="http://www.jstatsoft.org/v40/i09">PDF</a> <br>
+                                              <p></p>
+                                          </li>
+
+
+                                          <li >Predicting nucleosome positioning using a duration Hidden Markov Model<br>
+                                            Xi ,L., Fondufe-Mittendorf , Y.,Xia, L., Flatow,J., Widom <strong>,</strong>J. and <strong>Wang, J.-P., </strong><br>
+                                            <em><strong>BMC Bioinformatics </strong></em>, 2010, doi:10.1186/1471-2105-11-346, <a href="http://www.biomedcentral.com/1471-2105/11/346">PDF</a>, <a href="http://nucleosome.stats.northwestern.edu/" target="_blank">NuPoP software </a>&nbsp; <a href="http://www.bioconductor.org/help/bioc-views/release/bioc/html/NuPoP.html">Bioconductor download</a><br>
+                                            <p></p>
+                                          </li>
+                                            
+                                          <li >A Poisson-compound Gamma model for species richness estimation <br>
+                                              <strong>Wang, J.-P.</strong> , <em><strong>Biometrika</strong></em>, 2010, 97(3): 727-740, <a href="OnlineSupp.pdf">suppplemental materials </a>&nbsp; <a href="SPECIES.htm">SPECIES_V1.0 R package </a><br>
+                                              <p></p>
+                                          </li>
+                                            
+                                            
+                                          <li >Preferentially quantized linker DNA lengths in Saccharomyces cerevisiae <br>
+                                              <strong>Wang, J.-P.</strong>, Fondufe-Mittendorf,Y., Xi, L., Tsai, G.,Segal, E. and Widom, J., <em><strong>PLoS Computational Biology</strong></em>, 2008, 4(9) e1000175 <a href="http://www.ploscompbiol.org/doi/pcbi.1000175">PDF</a>, <a href="WangWidomPLoS08.html">Supplementary and codes</a><br>
+                                              <p></p>
+                                          </li>
+
+
+                                          <li >A genomic code for nucleosome positioning<br>
+                                            Segal, E., Fondufe-Mittendorf,Y., Chen,L., Th&aring;str&ouml;m, A., Field, Y., Moore, I.K., <span
+                                         style="font-weight: bold;">Wang, J.-P.Z.</span> and Widom,J., <span style="font-weight: bold; font-style: italic;">Nature</span>, 2006, 442(7104):772-778<br>
+                                            <p></p>
+                                          </li>
+
+                                          <li >A penalized nonparametric maximum likelilhood approach to species richness estimation<span style="font-weight: bold;"><br>
+                                            Wang, J.-P. Z.</span> and Lindsay, B. G., <span style="font-style: italic; font-weight: bold;">Journal of American Statistical Association</span>, 2005,100(471):942-959. <a href="publishedpaper/WangLindsay2005JASA.pdf">PDF </a> <br>
+                                            <p></p>
+                                          </li>
+
+
+
+                                    </ul>
+								</section>  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Office:</strong> Room 302, 2006 Sheridan Road, Evanston, IL 60208</p>
+    <p><strong>Email:</strong> <a href="mailto:jzwang@northwestern.edu">jzwang@northwestern.edu</a></p>
+    <p><strong>Phone:</strong> (847) 467-6896 (Dept: 847-491-3974)</p>
+    <p><a href="https://statistics.northwestern.edu/people/faculty/ji-ping-wang.html">Department Profile</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ji‑Ping Wang | Northwestern University</p>
+  </footer>
+</body>
 </html>
